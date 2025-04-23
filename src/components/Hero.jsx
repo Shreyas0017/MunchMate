@@ -113,16 +113,14 @@ const Hero = () => {
       },
     },
     hover: {
-      scale: 1.07,
-      boxShadow: "0 12px 30px rgba(255, 87, 34, 0.4)",
+      scale: 1.03,
       transition: {
         duration: 0.5,
         ease: [0.16, 1, 0.3, 1],
       },
     },
     tap: {
-      scale: 0.95,
-      boxShadow: "0 6px 15px rgba(255, 87, 34, 0.3)",
+      scale: 0.98,
       transition: { duration: 0.2 },
     },
   };
