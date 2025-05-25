@@ -153,11 +153,11 @@ const UserDetails = () => {
     ]
     // Additional departments removed for brevity
   };
-  
+
 
   // Get all department names for the dropdown
   const departments = Object.keys(departmentsWithCourses);
-  const sections = ["A", "B", "C", "D", "E"];
+  const sections = ["A", "B", "C", "D", "E","F","G","H","I","J"];
   const semesters = [
     "1st Semester",
     "2nd Semester",
@@ -221,7 +221,7 @@ const UserDetails = () => {
       } else if (formData.rollNumber.trim().length < 6) {
         newErrors.rollNumber = "Please enter your full roll number (min 6 characters)";
       }
-      
+
       // Validate Contact Number
       if (!formData.contactNumber.trim()) {
         newErrors.contactNumber = "Contact number is required";
@@ -317,10 +317,10 @@ const UserDetails = () => {
     setGeneratedOtp(otp);
     setOtpSent(true);
     setCountdown(60); // Set countdown for 60 seconds
-    
+
     // In a real application, you would send this OTP via SMS
     console.log(`OTP sent to ${formData.contactNumber}: ${otp}`);
-    
+
     // For development, alert the OTP (remove in production)
     alert(`Your OTP is: ${otp} (This alert is only for development)`);
   };
